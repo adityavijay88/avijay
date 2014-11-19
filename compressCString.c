@@ -17,16 +17,10 @@ char *alterString(char *name){
             i++;
             cnt++;
         }
-        if(cnt>0){
-            newName[j+1] = cnt+1 + '0';
-            j = j+2;
-            i++;
-        }else{
-            newName[j+1] = cnt+1+'0';
-            j = j + 2;
-            //j++;
-            i++;
-        }
+        
+        newName[j+1] = cnt+1 + '0';
+        j = j+2;
+        i++;
     }
     
     newName[j] = '\0';
